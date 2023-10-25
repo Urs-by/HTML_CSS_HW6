@@ -1,0 +1,270 @@
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("../fonts/Lato-Bold.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url("../fonts/Lato-Black.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("../fonts/Lato-Light.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Thin";
+    src: url("../fonts/Lato-Thin.ttf");
+    font-style: normal;
+}
+
+.body {
+    margin: 0;
+}
+
+.header-font {
+    height: 75px;
+    background-color: #222;
+}
+
+.bound {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+}
+
+.header-menu {
+    max-width: 160px;
+    padding: 10px;
+}
+
+.intro {
+    background-color: #F1E4E6;
+}
+
+.intro-block {
+    /* height: 764px; */
+    display: flex;
+    gap: 63px;
+
+
+}
+
+.intro-img {
+    margin-left: -230px;
+}
+
+.intro-border {
+    margin-top: 290px;
+    padding-left: 16px;
+    height: 92px;
+    border-left: solid;
+    border-left-width: 12px;
+    border-left-color: #F16D7F;
+}
+
+.intro-capitals {
+    margin: 0;
+    font-family: "Lato-Black";
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.intro-luxerios {
+    font-family: "Lato-Regular";
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.intro-fashion {
+    font-family: "Lato-Regular";
+    color: #F16D7F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.unit {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.unit img {
+    filter: brightness(40%)
+}
+
+.unit-item {
+    position: relative;
+
+}
+
+.unit-item-long {
+    position: relative;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.unit-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unit-text {
+    margin: 0;
+    font-family: "Lato-Light";
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.unit-buttom {
+    margin: 0;
+    font-family: "Lato-Light";
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cards {
+
+    margin-top: 96px;
+    margin-bottom: 60px;
+
+}
+
+.card-title {
+    margin: 0;
+    text-align: center;
+    font-family: "Lato-Regular";
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-text {
+    margin: 0;
+    text-align: center;
+    font-family: "Lato-Light";
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-items {
+    margin: 48px 0px 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* .card-item {
+    margin: 0px;
+} */
+
+.card-item-properties {
+    background-color: #F8F8F8;
+    ;
+
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.card-item-properties-name {
+    margin: 0;
+    color: #000;
+    font-family: "Lato-Bold";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-item-properties-consist {
+    margin: 0;
+    max-width: 315px;
+    color: #5D5D5D;
+    font-family: "Lato-Light";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.card-item-properties-price {
+    margin: 0;
+    color: #F16D7F;
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-button-wraper {
+    text-align: center;
+
+}
+
+.card-button {
+    color: #F26376;
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 15px 39px;
+    cursor: pointer;
+    background-color: #FFF;
+    border-color: #F26376;
+}
