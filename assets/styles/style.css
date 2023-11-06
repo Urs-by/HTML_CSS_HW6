@@ -28,13 +28,12 @@
     font-style: normal;
 }
 
-.body {
-    
+.body {    
     margin: 0;
 }
 
 .header-font {
-    min-width: 1140px;
+    /* max-width: 1440px; */
     height: 75px;
     background-color: #222;
 }
@@ -70,11 +69,12 @@
 }
 
 .intro {
-    min-width: 1140px;
+    /* max-width: 1440px; */
     background-color: #F1E4E6;
 }
 
 .intro-block {
+    margin: 0 auto;
     display: flex;
     gap: 63px;
 }
@@ -130,6 +130,8 @@
 }
 
 .unit img {
+    width: 100%;
+    height: 100%;
     filter: brightness(40%)
 }
 
@@ -174,10 +176,8 @@
 }
 
 .cards {
-
     margin-top: 96px;
     margin-bottom: 60px;
-
 }
 
 .card-title {
@@ -209,15 +209,19 @@
     gap: 30px;
 }
 
-/* .card-item {
-    margin: 0px;
-} */
+.card-item img{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
 
 .card-item-properties {
     background-color: #F8F8F8;
     padding: 24px 16px;
+    padding-right: 28px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 16px;
 
 }
@@ -234,7 +238,7 @@
 
 .card-item-properties-consist {
     margin: 0;
-    max-width: 315px;
+    /* max-width: 315px; */
     color: #5D5D5D;
     font-family: "Lato-Light";
     font-size: 14px;
@@ -272,70 +276,42 @@
     border-color: #F26376;
 }
 
-@media screen and (max-width:1024px) {
-
+@media screen and (max-width: 1439px) {
     .bound {
-        max-width: 1024px;
-
-    }
-
-    .header {
-
-        margin-left: 32px;
-        margin-right: 32px;
-
+        max-width: 100%;
+        margin: 0 16px;
     }
     .header-font{
-        min-width: 768px;
+        max-width: 100%;
     }
-    
-    .intro {
-        min-width: 768px;
+    .header {
+        max-width: 100%;
+        margin: 0 32px;
     }
-
-    .intro-block {
-        height: 367px;
+    .intro-block{
+        max-width: 100%;
+        margin: 0 auto;
         gap: 39px;
+        justify-content: center;
     }
-
     .intro-img {
         margin-left: 0px;
     }
-
     .intro-border {        
         margin-top: 138px;
     }
-
-    .intro-capitals {
-        min-width: 300px;
+    .intro-capitals { 
         font-size: 44px;
     }
-
     .intro-luxerios {        
         font-size: 24px;
     }
-
     .intro-fashion {
         font-size: 24px;
     }
-
-    .unit {
-        margin: 65px 16px;
-        gap: 19px;
-    }
-
-    .unit-item {
-        text-align: center;
-    }
-
-    .unit-buttom {
-        width: 150px;
-    }
-
     .cards {
         margin: 110px 16px 70px;
     }
-
     .card-items {
         max-width: 100%;
         margin: 72px 0px 32px;
@@ -343,4 +319,26 @@
         gap: 16px;
         justify-items: center;
     }
+    /* .card-item-properties-consist{
+        width: 315px;
+    } */
+    .unit {
+        margin: 65px 16px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 19px;
+    }
+    .unit-item {
+        text-align: center;
+    }
+    .unit-buttom {
+        width: 150px;
+    }
+    
 }
+
+@media screen and (max-width: 1023px) {
+    .intro-block {
+        gap: 0;
+    }
+}    
