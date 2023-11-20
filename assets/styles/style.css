@@ -342,3 +342,49 @@
         gap: 0;
     }
 }    
+
+@media screen and (max-width: 767px) {
+    
+    .header-menu {
+        padding: 0;
+    }
+    .header-menu-logo {
+        display: none;
+    }
+    .header-menu-basket{
+        display: none;
+    }
+    .intro-block{
+        height: 363px;
+    }
+    .intro-img{
+        display: none; 
+    }
+    .intro-border {
+        height: 67px;
+    }
+    .intro-capitals { 
+        font-size: 38px;
+    }
+    .intro-luxerios {        
+        font-size: 20px;
+    }
+    .intro-fashion {
+        font-size: 20px;
+    }
+    .unit{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: 32px;
+    }
+    .cards{
+        margin: 64px 8px 85px;
+    }
+    .card-items {        
+        display: flex;
+        flex-direction: column;
+    }
+
+}
