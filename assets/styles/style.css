@@ -67,6 +67,31 @@
     gap: 33px;
 
 }
+.header-basket-count{
+    position: relative;
+}
+.header-basket-count::after{
+    position: absolute;
+    content: '5';
+    padding: 0;
+    top: -8px;
+    right: -10px;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
 
 .intro {
     /* max-width: 1440px; */
@@ -604,6 +629,9 @@
     }
 
     .header-menu-basket {
+        display: none;
+    }
+    .header-basket-count{
         display: none;
     }
 
