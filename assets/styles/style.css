@@ -67,10 +67,12 @@
     gap: 33px;
 
 }
-.header-basket-count{
+
+.header-basket-count {
     position: relative;
 }
-.header-basket-count::after{
+
+.header-basket-count::after {
     position: absolute;
     content: '5';
     padding: 0;
@@ -96,7 +98,23 @@
 .intro {
     /* max-width: 1440px; */
     background-color: #F1E4E6;
+    position: relative;
 }
+
+/* .intro::after {
+    position: fixed;
+    content: '';
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-weight: 700;
+
+    width: 232px;
+    height: 634px;
+    background-color: #FFF;
+    box-shadow: -5px 5px 5px #9F9F9F;
+    top: 85px;
+    right: 0;
+} */
 
 .intro-block {
     margin: 0 auto;
@@ -236,8 +254,47 @@
 
 .card-item img {
     width: 100%;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
+}
+
+.card-item img:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+}
+
+.card_item-image {
+    position: relative;
+}
+
+.card_item-image .button-add-card {
+
+    display: none;
+    border: 1px solid #FFF;
+    background-color: inherit;
+    width: 139px;
+    height: 44px;
+    color: #FFF;
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_item-image:hover .button-add-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.card_item-image:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+
 }
 
 .card-item-properties {
@@ -573,38 +630,45 @@
     .unit-buttom {
         width: 150px;
     }
-    .advantages{
+
+    .advantages {
         max-width: 100%;
         grid-template-columns: repeat(1, 1fr);
         gap: 48px;
     }
-    .about{
+
+    .about {
         max-width: 100%;
         /* background: linear-gradient(rgba(244, 244, 244, 0.70), rgba(244, 244, 244, 0.70)), url('../images/backgraund-tablet.jpg'); */
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .card-about{
+
+    .card-about {
         max-width: 100%;
         gap: 0;
         display: grid;
         /* grid-template-columns: repeat(1, 1fr); */
         text-align: center;
         justify-items: center;
-    
+
     }
-    .card-aboutme{
+
+    .card-aboutme {
         margin-top: 64px;
         margin-bottom: 0;
     }
-    .card-subscribe{
+
+    .card-subscribe {
         margin-top: 27px;
         margin-bottom: 140px;
     }
+
     .card-subscribe-text {
         margin-top: 0;
     }
-    .subscribe{
+
+    .subscribe {
         margin-top: 27px;
     }
 
@@ -631,7 +695,8 @@
     .header-menu-basket {
         display: none;
     }
-    .header-basket-count{
+
+    .header-basket-count {
         display: none;
     }
 
@@ -675,6 +740,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .card-aboutme-text {
         font-size: 18px;
         width: 343px;
