@@ -28,7 +28,7 @@
     font-style: normal;
 }
 
-.body {
+body {
     margin: 0;
 }
 
@@ -42,7 +42,6 @@
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .header {
@@ -50,7 +49,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header-logo {
@@ -65,7 +63,62 @@
     padding: 10px;
     display: flex;
     gap: 33px;
+    align-items: center;
+}
 
+.header-menu-burger {
+    position: relative;
+}
+
+.drop-down-menu {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    width: 232px;
+    height: 634px;
+    top: 75px;
+    right: 0;
+    background-color: #FFF;
+    box-shadow: -5px 5px 5px #9F9F9F;
+    font-family: Lato-Regular;
+}
+
+.header-drop-down-menu {
+    margin-left: 33px;
+    margin-top: 32px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header_drop-down-menu-card {
+    margin-left: 33px;
+    margin-top: 0;
+    color: #6F6E6E;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-left: 53px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header_drop-down-menu-title {
+    margin-left: 33px;
+    margin-top: 20px;
+    color: #F16D7F;
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header_drop-down-menu-tex {
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+.header-menu-burger:hover .drop-down-menu {
+    display: block;
 }
 
 .header-basket-count {
@@ -91,30 +144,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-
 }
 
 .intro {
-    /* max-width: 1440px; */
     background-color: #F1E4E6;
     position: relative;
 }
 
-/* .intro::after {
-    position: fixed;
-    content: '';
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 700;
 
-    width: 232px;
-    height: 634px;
-    background-color: #FFF;
-    box-shadow: -5px 5px 5px #9F9F9F;
-    top: 85px;
-    right: 0;
-} */
 
 .intro-block {
     margin: 0 auto;
@@ -127,7 +164,6 @@
 }
 
 .intro-border {
-
     margin-top: 290px;
     padding-left: 16px;
     height: 92px;
@@ -180,7 +216,6 @@
 
 .unit-item {
     position: relative;
-
 }
 
 .unit-item-long {
@@ -258,16 +293,27 @@
     cursor: pointer;
 }
 
-.card-item img:hover {
-    background-color: rgba(58, 56, 56, 0.86);
-}
-
 .card_item-image {
     position: relative;
 }
 
-.card_item-image .button-add-card {
+.card_item-image::after {
+    background-color: rgba(58, 56, 56, 0.86);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 
+.card_item-image:hover::after {
+    display: block;
+}
+
+.card_item-image .button-add-card {
+    z-index: 2;
     display: none;
     border: 1px solid #FFF;
     background-color: inherit;
@@ -292,11 +338,6 @@
     gap: 11px;
 }
 
-.card_item-image:hover {
-    background-color: rgba(58, 56, 56, 0.86);
-
-}
-
 .card-item-properties {
     background-color: #F8F8F8;
     padding: 24px 16px;
@@ -305,7 +346,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-
 }
 
 .card-item-properties-name {
@@ -320,7 +360,6 @@
 
 .card-item-properties-consist {
     margin: 0;
-    /* max-width: 315px; */
     color: #5D5D5D;
     font-family: "Lato-Light";
     font-size: 14px;
@@ -341,7 +380,6 @@
 
 .card-button-wraper {
     text-align: center;
-
 }
 
 .card-button {
@@ -351,7 +389,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
     padding: 15px 39px;
     cursor: pointer;
     background-color: #FFF;
@@ -365,7 +402,6 @@
 }
 
 .advantages {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -382,7 +418,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 .card-advantages-text {
@@ -394,7 +429,6 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-
 }
 
 .about {
@@ -402,20 +436,15 @@
     width: 100%;
     text-align: center;
     background: linear-gradient(rgba(244, 244, 244, 0.70), rgba(244, 244, 244, 0.70)), url('../images/background.jpg');
-
-    /* background-image: url('../images/background.jpg');  */
     background-position: center;
     background-repeat: no-repeat;
-
 }
-
 
 .card-about {
     width: 100%;
     display: flex;
     gap: 327px;
     justify-content: center;
-
 }
 
 .card-aboutme {
@@ -451,11 +480,12 @@
     text-align: center;
     line-height: 167.2%;
     font-family: Lato-Regular;
-
 }
 
 .subscribe {
     margin-top: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-subscribe-name {
@@ -474,7 +504,6 @@
 
 .subscribe-email {
     background-color: #E1E1E1;
-    /* padding: 10px; */
     border-radius: 50px 0px 0px 50px;
     border: 0;
     height: 49px;
@@ -510,16 +539,13 @@
 
 .font-footer {
     background-color: #222224;
-
 }
 
 .footer-block {
-
     height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer-text {
@@ -535,17 +561,13 @@
 .footer-logo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* align-items: center; */
     gap: 7px;
-    /* justify-items: center; */
-
 }
 
 .footer-logo-item {
     padding-top: 8px;
     padding-bottom: 3px;
     width: 32px;
-    /* height: 32px; */
     background-color: #FFF;
     text-align: center;
 }
@@ -613,14 +635,9 @@
         justify-items: center;
     }
 
-    /* .card-item-properties-consist{
-        width: 315px;
-    } */
     .unit {
         margin: 65px 16px;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 19px;
+        gap: 20px;
     }
 
     .unit-item {
@@ -639,7 +656,6 @@
 
     .about {
         max-width: 100%;
-        /* background: linear-gradient(rgba(244, 244, 244, 0.70), rgba(244, 244, 244, 0.70)), url('../images/backgraund-tablet.jpg'); */
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -648,7 +664,6 @@
         max-width: 100%;
         gap: 0;
         display: grid;
-        /* grid-template-columns: repeat(1, 1fr); */
         text-align: center;
         justify-items: center;
 
@@ -671,9 +686,6 @@
     .subscribe {
         margin-top: 27px;
     }
-
-
-
 }
 
 @media screen and (max-width: 1023px) {
@@ -782,5 +794,4 @@
         margin-top: 40px;
         margin-bottom: 9px;
     }
-
 }
